@@ -149,7 +149,7 @@ class Dork:
         )
 
         self.parser.add_argument(
-            "-s", "--site", help="Specify the site to dork", type=str, required=False, defualt="",
+            "-s", "--site", help="Specify the site to dork", type=str, required=True
         )
 
         self.parser.add_argument(
