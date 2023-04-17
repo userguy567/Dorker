@@ -359,14 +359,10 @@ class Dork:
             soup = BeautifulSoup(response.text, "html.parser")
 
             links = soup.findAll("div", {"class": "yuRUbf"})
-            counter = 0
-            for link in links:
 
-                counter += 1
+            for j, link in enumerate(links):
 
-                number = str(counter) + ". "
-
-                result.append(number + " | " + link.find("a").get("href"))
+                result.append(f"{i*10+j+1}" +" | " +  link.find("a").get("href"))
 
         return "\n".join(result)
 
