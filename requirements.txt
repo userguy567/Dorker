@@ -1,0 +1,5 @@
+argparse
+pandas
+requests
+bs4
+random
